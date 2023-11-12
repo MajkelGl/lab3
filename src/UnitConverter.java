@@ -67,9 +67,7 @@ public class UnitConverter extends JFrame {
                         return value * 100;
                     case "Milimetry":
                         return value * 1000;
-                    // Dodaj inne przypadki
-                }
-                break;
+                }break;
             case "Centymetry":
                 switch(outputUnit){
                     case "Metry":
@@ -78,7 +76,7 @@ public class UnitConverter extends JFrame {
                         return value;
                     case "Milimetry":
                         return value * 10;
-                }
+                }break;
             case "Milimetry":
                 switch(outputUnit){
                     case "Metry":
@@ -87,36 +85,35 @@ public class UnitConverter extends JFrame {
                         return value / 10;
                     case "Milimetry":
                         return value;
-                }
+                }break;
             case "Kilogramy":
                 switch(outputUnit){
                     case "Kilogramy":
                         return value;
                     case "Gramy":
                         return value * 1000;
-                }
+                }break;
             case "Gramy":
                 switch(outputUnit){
                     case "Kilogramy":
                         return value/1000;
                     case "Gramy":
                         return value;
-                }
+                }break;
             case "Litry":
                 switch(outputUnit){
                     case "Litry":
                         return value;
                     case "Mililitry":
                         return value * 1000;
-                }
+                }break;
             case "Mililitry":
                 switch(outputUnit){
                     case "Litry":
                         return value/1000;
                     case "Mililitry":
                         return value;
-                }
-                break;
+                }break;
         }
         return 0;
     }
