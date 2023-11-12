@@ -50,7 +50,7 @@ public class UnitConverter extends JFrame {
 
             double result = performConversion(inputValue, inputUnit, outputUnit);
 
-            resultField.setText(String.format("%.2f", result));
+            resultField.setText(String.format("%.3f", result));
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(this, "Wprowadź poprawną liczbę.", "Błąd", JOptionPane.ERROR_MESSAGE);
         }
