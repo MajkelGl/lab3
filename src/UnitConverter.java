@@ -8,7 +8,7 @@ public class UnitConverter extends JFrame {
 
     public UnitConverter() {
         setTitle("Konwerter Jednostek");
-        setSize(300, 200);
+        setSize(300, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         String[] units = {"Metry", "Centymetry", "Milimetry", "Kilogramy", "Gramy", "Litry", "Mililitry"};
