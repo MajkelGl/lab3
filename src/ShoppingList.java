@@ -3,13 +3,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ListaZakupowAppJFrame {
+public class ShoppingList {
 
     private DefaultListModel<String> listaModel;
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            ListaZakupowAppJFrame app = new ListaZakupowAppJFrame();
+            ShoppingList app = new ShoppingList();
             app.createAndShowGui();
         });
     }
