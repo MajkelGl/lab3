@@ -11,7 +11,7 @@ public class ColorChangeApp extends JFrame {
 
     public ColorChangeApp() {
         setTitle("Zmiana koloru");
-        setSize(400, 200);
+        setSize(200, 100);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -34,7 +34,6 @@ public class ColorChangeApp extends JFrame {
     private void changeColor() {
         String colorName = colorTextField.getText().toLowerCase();
 
-        // Sprawdzanie wprowadzonej nazwy koloru
         Color newColor;
         switch (colorName) {
             case "czerwony":

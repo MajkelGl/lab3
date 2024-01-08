@@ -17,7 +17,7 @@ public class ShoppingList {
     public void createAndShowGui() {
         JFrame frame = new JFrame("Lista Zakupów");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 300);
+        frame.setSize(300, 300);
 
         listaModel = new DefaultListModel<>();
         JList<String> listaZakupow = new JList<>(listaModel);
@@ -28,7 +28,7 @@ public class ShoppingList {
         przyciskDodaj.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String produkt = poleTekstowe.getText().trim();
+                String produkt = poleTekstowe.getText();
                 if (!produkt.isEmpty()) {
                     listaModel.addElement(produkt);
                     poleTekstowe.setText("");
@@ -49,8 +49,8 @@ public class ShoppingList {
         JPanel panel = new JPanel();
         panel.add(poleTekstowe);
         panel.add(przyciskDodaj);
-        panel.add(listaZakupow);
         panel.add(przyciskUsun);
+        panel.add(listaZakupow);
 
         frame.getContentPane().add(BorderLayout.CENTER, panel);
         frame.setVisible(true);
